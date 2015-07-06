@@ -2,6 +2,7 @@
 
 namespace Boedy\Subscription\Adapter;
 
+use Boedy\Http\Response\ResponseInterface;
 use Boedy\RequestFactoryInterface;
 use Boedy\Subscription\InvalidParametersException;
 use Boedy\Subscription\SubscriptionErrorException;
@@ -32,7 +33,5 @@ abstract class AbstractAdapter implements SubscriptionInterface
         if (sizeof($missing_keys) > 0) throw new InvalidParametersException($missing_keys);
     }
 
-    protected function failed($code, $response){
-        throw new SubscriptionErrorException(null, $code);
-    }
+    abstract protected function failed(ResponseInterface $response);
 }

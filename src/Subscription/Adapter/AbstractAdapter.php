@@ -5,7 +5,6 @@ namespace Boedy\Subscription\Adapter;
 use Boedy\Http\Response\ResponseInterface;
 use Boedy\RequestFactoryInterface;
 use Boedy\Subscription\InvalidParametersException;
-use Boedy\Subscription\SubscriptionErrorException;
 use Boedy\Subscription\SubscriptionInterface;
 
 abstract class AbstractAdapter implements SubscriptionInterface

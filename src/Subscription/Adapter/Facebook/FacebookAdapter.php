@@ -1,6 +1,6 @@
 <?php
 
-namespace Boedy\Subscription\Adapter\Facbook;
+namespace Boedy\Subscription\Adapter\Facebook;
 
 use Boedy\Http\Response\ResponseInterface;
 use Boedy\Subscription\Adapter\AbstractAdapter;
